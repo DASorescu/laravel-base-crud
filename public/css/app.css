@@ -1,0 +1,453 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap);* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+header .topbanner {
+  height: 20px;
+  background-color: #0082F9;
+}
+header .row {
+  height: 100px;
+  align-items: center;
+}
+header img {
+  max-width: 10%;
+  padding: 1.5rem;
+}
+header ul {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
+header ul li {
+  border-bottom: 2px solid transparent;
+  flex-basis: 10%;
+  list-style-type: none;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+header ul li.active {
+  border-bottom: 3px solid #0082F9;
+}
+header ul li:hover {
+  cursor: pointer;
+}
+header ul li a {
+  height: 100px;
+  text-decoration: none;
+  color: #464646;
+  font-weight: bold;
+}
+header input {
+  width: 15%;
+  border: none;
+  border-bottom: 2px solid #0082F9;
+  height: 30px;
+}
+
+#jumbotron {
+  height: 420px;
+  background-image: url("../images/jumbotron.jpg");
+}
+#jumbotron .container {
+  height: 100%;
+}
+
+main {
+  background-color: #1C1C1C;
+}
+main .container {
+  position: relative;
+}
+main .container .current-series {
+  border: none;
+  position: absolute;
+  top: -25px;
+  left: 0%;
+  height: 50px;
+  width: 250px;
+  background-color: #0082F9;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+main .row {
+  padding-top: 50px;
+  flex-wrap: wrap;
+}
+main .row .col {
+  flex-basis: 16.6666666667%;
+}
+main .comic-cards-section {
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .comic-cards-section li {
+  list-style-type: none;
+  padding: 0;
+  flex-basis: 15%;
+  height: 100%;
+}
+main .comic-cards-section li a {
+  text-decoration: none;
+}
+main .card {
+  height: 80%;
+  width: 100%;
+  padding: 0.5rem;
+}
+main .card img {
+  max-width: 100%;
+  display: block;
+  margin: 0%;
+}
+main .card p {
+  font-size: 15px;
+  text-align: start;
+  color: #fff;
+}
+main .button-section {
+  display: flex;
+  justify-content: center;
+}
+main .button-section button {
+  background-color: #0082F9;
+  color: #fff;
+  height: 40px;
+  width: 200px;
+  border-width: 0;
+  border-style: none;
+  border-color: #0082F9;
+  -o-border-image: none;
+     border-image: none;
+  margin-bottom: 50px;
+}
+main .banner {
+  padding: 2rem;
+  background-color: #0082F9;
+  color: #fff;
+  height: 50%;
+}
+main .banner .container {
+  height: 100%;
+}
+main .banner .container ul {
+  display: flex;
+  margin-top: 0%;
+  padding-left: 0%;
+  justify-content: space-between;
+  margin-bottom: 0%;
+}
+main .banner .container ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+main .banner .container ul li img {
+  height: 50px;
+}
+
+.top-footer {
+  height: 260px;
+  color: #fff;
+  background-image: url("../images//footer-bg.jpg");
+}
+.top-footer .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.top-footer .footer-logo {
+  height: 100%;
+  flex-basis: 40%;
+  background-image: url("../images/dc-logo-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+.top-footer .footer-list {
+  padding-top: 30px;
+  flex-basis: 40%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.top-footer .footer-list .column {
+  flex-basis: 33.3333333333%;
+}
+.top-footer .footer-list .column li {
+  font-size: 10px;
+}
+.top-footer .footer-list .column h3 {
+  font-size: 15px;
+}
+.top-footer a {
+  text-decoration: none;
+  color: #676565;
+  font-size: 10px;
+  line-height: 15px;
+}
+.top-footer ul {
+  padding: 0%;
+  list-style-type: none;
+}
+
+.bottom-footer {
+  height: 80px;
+  background-color: #303030;
+}
+.bottom-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.bottom-footer .container button {
+  background-color: #303030;
+  color: #fff;
+  padding: 5px 10px;
+  height: 50px;
+  border-width: 0;
+  border-style: none;
+  border: 1px solid #0082F9;
+  -o-border-image: none;
+     border-image: none;
+}
+.bottom-footer .social {
+  width: 40%;
+  display: flex;
+}
+.bottom-footer .social button {
+  flex-basis: 20%;
+  background-color: none;
+  color: #0082F9;
+  padding: 5px 10px;
+  height: 50px;
+  border-width: 0;
+  border-style: none;
+  border: none;
+}
+.bottom-footer .social .social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+}
+.bottom-footer .social .social-icons img {
+  flex-basis: 10%;
+}
+
+#comic-info {
+  background-color: #fff;
+}
+#comic-info .blue-banner {
+  height: 70px;
+  background-color: #0082F9;
+}
+#comic-info .blue-banner .image-container {
+  max-width: 900px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+#comic-info .blue-banner img {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  border: 1px solid #fff;
+}
+#comic-info .wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 30px;
+}
+#comic-info .info-content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: 70%;
+}
+#comic-info .info-content h2 {
+  color: #00407b;
+  margin: 2rem 0;
+}
+#comic-info .info-content p {
+  margin: 2rem 0;
+  width: 95%;
+  color: #666;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 20px;
+}
+#comic-info .availability {
+  width: 95%;
+  height: 50px;
+  background-color: #54BA58;
+  color: #99E87E;
+  display: flex;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+}
+#comic-info .availability .price {
+  padding-left: 1rem;
+  line-height: 50px;
+  flex-grow: 1;
+}
+#comic-info .availability .price span {
+  color: #fff;
+}
+#comic-info .availability .status {
+  text-align: center;
+  line-height: 50px;
+  flex-basis: 20%;
+  border-right: 1px solid #000;
+}
+#comic-info .availability .check {
+  text-align: center;
+  line-height: 50px;
+  flex-basis: 30%;
+  color: #fff;
+}
+#comic-info figure {
+  flex-basis: 30%;
+  text-align: end;
+}
+#comic-info figure p {
+  color: #666;
+  margin-top: 2rem;
+  margin-bottom: 0%;
+  text-align: end;
+  font-weight: bold;
+}
+#comic-info figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+#comic-credits {
+  background-color: #F6F6F6;
+}
+#comic-credits .border-div {
+  border-bottom: 1px solid #dedede;
+}
+#comic-credits .wrapper {
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+#comic-credits .artist-writers,
+#comic-credits .specs {
+  flex-basis: 48%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+#comic-credits .artist-writers h2,
+#comic-credits .specs h2 {
+  padding: 2rem 0;
+  font-size: 20px;
+  border-bottom: 1px solid #dedede;
+}
+#comic-credits .artist-writers .art-list,
+#comic-credits .specs .art-list {
+  display: flex;
+  border-bottom: 1px solid #dedede;
+  padding: 0.5rem 0;
+}
+#comic-credits .artist-writers .art-list p,
+#comic-credits .specs .art-list p {
+  font-size: 12px;
+  flex-basis: 30%;
+}
+#comic-credits .artist-writers .art-list ul,
+#comic-credits .specs .art-list ul {
+  flex-basis: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+#comic-credits .artist-writers .art-list ul li,
+#comic-credits .specs .art-list ul li {
+  color: rgb(25, 171, 220);
+  font-size: 12px;
+  font-weight: bold;
+}
+#comic-credits .thumbnails {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+}
+#comic-credits .thumbnails .digital,
+#comic-credits .thumbnails .shop,
+#comic-credits .thumbnails .locator,
+#comic-credits .thumbnails .subs {
+  flex-basis: 25%;
+  display: flex;
+  height: 70px;
+  border-right: 1px solid #dedede;
+  color: rgb(133, 131, 131);
+  justify-content: space-between;
+}
+#comic-credits .thumbnails .digital p,
+#comic-credits .thumbnails .shop p,
+#comic-credits .thumbnails .locator p,
+#comic-credits .thumbnails .subs p {
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+#comic-credits .thumbnails .digital {
+  border-left: 1px solid #dedede;
+}
+#comic-credits .thumbnails .digital .device {
+  background-image: url(../images/cta-icons.png);
+  background-position: 0 0;
+}
+#comic-credits .thumbnails .device,
+#comic-credits .thumbnails .cards,
+#comic-credits .thumbnails .pointer,
+#comic-credits .thumbnails .shirt {
+  opacity: 1;
+  width: 35px;
+  height: 37px;
+  margin: 1rem;
+}
+#comic-credits .thumbnails .cards {
+  background-image: url(../images/cta-icons.png);
+  background-position: -105px 0;
+}
+#comic-credits .thumbnails .pointer {
+  background-image: url(../images/cta-icons.png);
+  background-position: -74px 0;
+}
+#comic-credits .thumbnails .shirt {
+  width: 40px;
+  background: url(../images/cta-icons.png) -35px 0;
+}

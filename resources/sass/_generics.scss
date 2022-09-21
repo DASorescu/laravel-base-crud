@@ -1,0 +1,22 @@
+// small reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// rules applied to all body
+body {
+    font-family: 'Roboto', sans-serif;
+    ;
+}
+
+// generic rules
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex
+}

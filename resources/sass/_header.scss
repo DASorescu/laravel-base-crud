@@ -1,0 +1,61 @@
+header {
+
+    .topbanner {
+        height: 20px;
+        background-color: $main_blue;
+    }
+
+
+
+    .row {
+        height: 100px;
+        align-items: center;
+    }
+
+
+    img {
+        max-width: 10%;
+        padding: 1.5rem;
+    }
+
+    ul {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        padding: 0 2rem;
+
+        li {
+            border-bottom: 2px solid transparent;
+            flex-basis: calc(100% / 10);
+            list-style-type: none;
+            text-align: center;
+            height: 100px;
+            line-height: 100px;
+            vertical-align: middle;
+            margin: 0 5px;
+
+            &.active {
+                border-bottom: 3px solid $main_blue;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            a {
+                height: 100px;
+                text-decoration: none;
+                color: $main_font_color;
+                font-weight: bold;
+            }
+        }
+    }
+
+    input {
+        width: 15%;
+        border: none;
+        border-bottom: 2px solid $main_blue;
+        height: 30px;
+    }
+
+}

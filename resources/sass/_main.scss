@@ -1,0 +1,116 @@
+main {
+    background-color: $main_bg;
+
+    .container {
+        position: relative;
+
+        .current-series {
+            border: none;
+            position: absolute;
+            top: -25px;
+            left: 0%;
+            height: 50px;
+            width: 250px;
+            background-color: $main_blue;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+    }
+
+
+    .row {
+        padding-top: 50px;
+        flex-wrap: wrap;
+
+        .col {
+            flex-basis: calc(100% /6);
+        }
+    }
+
+    .comic-cards-section {
+        height: 100%;
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        li {
+            list-style-type: none;
+            padding: 0;
+            flex-basis: 15%;
+            height: 100%;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .card {
+        height: 80%;
+        width: 100%;
+        padding: 0.5rem;
+
+
+        img {
+            max-width: 100%;
+            display: block;
+            margin: 0%;
+        }
+
+        p {
+            font-size: 15px;
+            text-align: start;
+            color: #fff;
+        }
+    }
+
+    .button-section {
+        display: flex;
+        justify-content: center;
+
+        button {
+            background-color: #0082F9;
+            color: #fff;
+            height: 40px;
+            width: 200px;
+            border-width: 0;
+            border-style: none;
+            border-color: #0082F9;
+            border-image: none;
+            margin-bottom: 50px;
+        }
+    }
+
+    .banner {
+        padding: 2rem;
+        background-color: #0082F9;
+        color: #fff;
+        height: 50%;
+
+        .container {
+            height: 100%;
+
+            ul {
+                display: flex;
+                margin-top: 0%;
+                padding-left: 0%;
+                justify-content: space-between;
+                margin-bottom: 0%;
+
+                li {
+                    list-style-type: none;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}

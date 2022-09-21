@@ -1,0 +1,100 @@
+.top-footer {
+    height: 260px;
+    color: #fff;
+    background-image: url("../images//footer-bg.jpg");
+
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-logo {
+        height: 100%;
+        flex-basis: 40%;
+        background-image: url("../images/dc-logo-bg.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .footer-list {
+        padding-top: 30px;
+        flex-basis: 40%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .column {
+            flex-basis: calc(100% / 3);
+
+            li {
+                font-size: 10px;
+            }
+
+            h3 {
+                font-size: 15px;
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #676565;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    ul {
+        padding: 0%;
+        list-style-type: none;
+    }
+}
+
+.bottom-footer {
+    height: 80px;
+    background-color: #303030;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+        button {
+            background-color: #303030;
+            color: #fff;
+            padding: 5px 10px;
+            height: 50px;
+            border-width: 0;
+            border-style: none;
+            border: 1px solid #0082F9;
+            border-image: none;
+        }
+    }
+
+    .social {
+        width: 40%;
+        display: flex;
+
+        button {
+            flex-basis: 20%;
+            background-color: none;
+            color: #0082F9;
+            padding: 5px 10px;
+            height: 50px;
+            border-width: 0;
+            border-style: none;
+            border: none;
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 70%;
+
+            img {
+                flex-basis: 10%;
+            }
+        }
+    }
+}
