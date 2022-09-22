@@ -16,6 +16,17 @@
             <div class="check">Check Availability</div>
         </div>
         <p>{{$comic['description']}}</p>
+        <div class="d-flex align-items-center">
+            <a href="{{route('comics.index')}}"class="btn btn-primary m-3">BACK TO COMICS</a>
+            <a href="{{route('comics.edit',$comic->id)}}"class="btn btn-warning m-3">EDIT</a>
+            <form action="{{route('comics.destroy',$comic->id)}}" method="POST">
+                @csrf
+                @method('DELETE')
+                <button class="btn btn-danger h-40 m-3" type="submit">DELETE</button>
+            </form>
+
+        </div>
+            
     </div>
     <figure>
         <p>ADVERTISMENT</p>
