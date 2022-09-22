@@ -7,11 +7,12 @@
     <title>Dc-comics | @yield('route')</title>
     {{-- style --}}
     <link rel="stylesheet" href="{{asset('css/app.css')}}"type="text/css">
+
 </head>
 <body>
     @include('includes.header')
     @include('includes.jumbotron')
-    <main>
+    <main class="py-4">
         @yield('main-content')
         @yield('main-banner')
     </main>

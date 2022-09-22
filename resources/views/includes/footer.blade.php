@@ -127,7 +127,7 @@
 
 <footer>
     <div class="top-footer">
-        <div class="container">
+        <div class="my-container">
             <div class="footer-list">
                 <div class="column">
                     <h3>DC Comics</h3>
@@ -173,7 +173,7 @@
         </div>
     </div>
     <div class="bottom-footer">
-        <div class="container">
+        <div class="my-container">
             <div class="button">
                 <button>SIGN-UP NOW!</button>
             </div>

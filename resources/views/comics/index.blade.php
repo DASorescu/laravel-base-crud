@@ -1,16 +1,16 @@
 @extends('layouts.main')
 @section('route','Comics')
 @section('main-content')
-<section class="container">
+<section class="my-container">
 
     <button class="current-series">CURRENT SERIES</button>
 
-    <div class="row">
+    <div class="my-row">
         <ul class="comic-cards-section">
             @foreach($comics as $comic)
             <li>
-                <a href="{{route('comics.show' , ['id'=> $loop->index])}}">
-                    <div class="card">
+                <a href="{{route('comics.show' , $comic->id)}}">
+                    <div class="my-card">
                         <figure>
                             <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
                         </figure>
@@ -23,13 +23,14 @@
         </ul>
     </div>
     <div class="button-section">
-        <button>LOAD MORE</button>
+        <button class="butn">LOAD MORE</button>
+        <a href="{{route('comics.create')}}">ADD COMIC</a>
     </div>
 </section>
 @endsection
 @section('main-banner')
 <section class="banner ">
-    <div class="container">
+    <div class="my-container">
         <ul>
             <li><img src="../images/buy-comics-digital-comics.png" alt="buy">
                 <p>DIGITAL COMICS</p>
